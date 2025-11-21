@@ -225,7 +225,7 @@ function obtenerRopa(cityName, tempActual, sensTermica, humedad, viento, condici
         const altText = nombresRopa[item] || item;
         html += `
         <figure class="figure-clothes">
-            <img class="img-clothes" src="/assets/ropa/${item}.png" alt="${altText} icono">
+            <img class="img-clothes" src="assets/ropa/${item}.png" alt="${altText} icono">
             <figcaption class="figcaption">${altText}</figcaption>
         </figure>`;
     });
@@ -253,15 +253,15 @@ function mostrarDatosClima(cityName, tempActual, sensTermica, humedad, viento, c
                         <figcaption class="figcaption">${descCondicion}</figcaption>
                     </figure>
                     <figure class="figure-clothes">
-                        <img class="img-clothes" src="/assets/icons/termometro.png" alt="temperatura icon">
+                        <img class="img-clothes" src="assets/icons/termometro.png" alt="temperatura icon">
                         <figcaption class="figcaption">${tempActual} Cº</figcaption>
                     </figure>
                     <figure class="figure-clothes">
-                        <img class="img-clothes" src="/assets/icons/humedad.png" alt="humedad icon">
+                        <img class="img-clothes" src="assets/icons/humedad.png" alt="humedad icon">
                         <figcaption class="figcaption">${humedad} %</figcaption>
                     </figure>
                     <figure class="figure-clothes">
-                        <img class="img-clothes" src="/assets/icons/viento.png" alt="viento icon">
+                        <img class="img-clothes" src="assets/icons/viento.png" alt="viento icon">
                         <figcaption class="figcaption">${viento} m/s</figcaption>
                     </figure>
                 </div>
