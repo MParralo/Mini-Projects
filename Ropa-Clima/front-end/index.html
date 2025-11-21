@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    
+    <title>Ropa Clima</title>
+    <link rel="icon" type="image/png" href="/assets/Logo-Ropa-Clima-Sin-Fondo.png">
+</head>
+<body class="index-body">
+    <main class="index-main">
+        <header class="main-header index-header-sticky">
+            <div class="header-logo">
+                <img src="/assets/Logo-Ropa-Clima.png" alt="Logo de Ropa Clima" width="55px">
+                <h1 class="app-title">Ropa Clima</h1>
+            </div>
+            <div id="header-auth-actions" class="header-actions">
+                <a href="register.html" class="button button-register anim">
+                    <i class="i fas fa-user-plus"></i>Regístrar
+                </a>
+                <a href="login.html" class="button button-login anim">
+                    <i class="i fas fa-sign-in-alt"></i>Iniciar
+                </a>
+            </div>
+        </header>
+
+        <div class="container-flex">
+
+            <section class="search-card">
+                <div class="search-heading">
+                    <i class="fas fa-search idash lupa"></i>
+                    <h2 class="search-title">Buscar ciudad</h2>
+                </div>
+                <form id="climaForm" class="search-form">
+                    <div class="divisor">
+                        <i class="i fas fa-location-dot text-secondary"></i>
+                        <input id="inputCity" type="text" placeholder="Escribe la ciudad...">
+                    </div>
+                    <p id="errorMessage"></p>
+                    <button class="search-button anim" type="submit" id="buscar">Buscar</button>
+                </form>
+            </section>
+
+            <section id="contenedor-clima" class="container-clima">
+            </section>
+
+            <section id="city-fav" class="fav-card">
+                <header class="flex-heart">
+                    <i class="fas far fa-heart icon-heart"></i>
+                    <h2 class="city-title">Ciudades Favoritas</h2>
+                </header>
+
+                <p class="no-favorites">No tienes ciudades favoritas aún. ¡Busca una ciudad y agrégala a favoritos!</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
