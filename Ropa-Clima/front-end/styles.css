@@ -410,9 +410,10 @@ input {
     background: red;
     position: absolute;
     border: 2px solid black;
-    top: 55%;
+    top: 50%;
     left: 52%;
 }
+
 .auth-body::after {
     width: max-content;
     font-size: 3rem;
@@ -423,10 +424,9 @@ input {
     height: max-content;
     content: "⤶";
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 55%;
 }
-
 
 .auth-card {
     min-width: 300px;
